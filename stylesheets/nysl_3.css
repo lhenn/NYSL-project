@@ -116,8 +116,8 @@ ol {
   padding-left: 40px;
 }
 
-
-/* ---------- Table Elements ---------- */table {
+/* ---------- Table Elements ---------- */
+table {
   color: black;
   font: 18px/26px Verdana, Geneva, sans-serif;
   border-collapse: collapse;
@@ -142,16 +142,10 @@ thead {
   display: table-header-group;
 }
 
-/* ---------- Maps  ---------- */
-.mapTable {
-  border-collapse: separate;
-  width: 100%;
-}
-
-.mapTable td {
-  vertical-align: top;
-  width: 250px;
-  padding-top: 40px;
+/* ---------- Maps ---------- */
+.map-wrapper {
+  box-shadow: 4px 10px 49px -6px rgba(0, 0, 0, 0.64);
+  border-radius: 20px;
 }
 
 .address {
@@ -167,20 +161,13 @@ thead {
   display: inline;
 }
 
-/* ---------- Maps v2 ---------- */
-
-.map-wrapper{
-  box-shadow: 4px 10px 49px -6px rgba(0, 0, 0, 0.64);
-  border-radius: 20px;
-}
-
 .tab {
-  overflow:hidden;
-  display:flex;
-  flex-direction:row;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  background-color:grey;
-  padding-top:20px;
+  background-color: grey;
+  padding-top: 20px;
   border-radius: 20px 20px 0 0;
 }
 
@@ -190,19 +177,25 @@ thead {
   border: 1px solid #bababa;
   border-width: 1px 1px 0 1px;
   border-radius: 10px 10px 0 0;
-  height:50px;
+  height: 50px;
   outline: none;
   cursor: pointer;
   padding: 10px;
   font: 15px/26px Verdana, Geneva, sans-serif;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.tab button.active{
-  background-color:#efeff2;
-  border-color:#bababa;
+.tab button:hover {
+  border-color: #bababa;
   border-top: 1px solid #1fc440;
-  border-width:7px 0 0 0;
+  border-width: 5px 0 0 0;
+}
+
+.tab button.active {
+  background-color: #efeff2;
+  border-color: #bababa;
+  border-top: 1px solid #1fc440;
+  border-width: 7px 0 0 0;
   padding-bottom: 10px;
 }
 
@@ -211,20 +204,20 @@ thead {
   padding: 20px 10px;
   border-radius: 0 0 20px 20px;
   border-top: none;
-  background-color:#efeff2;
+  background-color: #efeff2;
 }
 
 .school-info {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  width:25%;
+  width: 25%;
   margin: 2%
 }
 
 /* ---------- Header ---------- */
 .headerContainer {
-  background-image: url('https://s3.amazonaws.com/gbstool/emails/2028/design2_image1.jpg?AWSAccessKeyId=AKIAJBIZLMJQ2O6DKIAA&Expires=1551171600&Signature=8xZcu0jNcnFPfcYGYQsMANnDhHo%3D');
+  background-image: url(".././images/banner_img.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 550px;
@@ -299,6 +292,7 @@ h1 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -457,7 +451,7 @@ a:hover {
 }
 
 #gameInfo {
-  height: 215px;
+  height: 218px;
   width: 250px;
 }
 
