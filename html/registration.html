@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Registration NYSL</title>
+  <link rel="stylesheet" href="/Users/LauraHenn/Documents/Ubiqum/NYSLproject/stylesheets/nysl_3.css">
+</head>
+
+<body>
+  <div class="navContainer">
+    <a class="otherPage" href="index.html">Home</a>
+    <a class="otherPage" href="nysl-about.html">About NYSL</a>
+    <div class="dropdown">
+      <button class="dropbtn">Resources <span style="font-size:10px">&#9660;</span>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a class="otherPage" href="nysl-game_information.html">Game Information</a>
+        <a class="otherPage" href="nysl-rules&policies.html">Rules & Policies</a>
+        <a class="currentPage">Player Registration</a>
+      </div>
+    </div>
+    <a class="otherPage" href=nysl-contact.html>Contact</a>
+  </div>
+  <form action="show_data.html" method="get">
+    <div class="form-wrapper">
+      <div id="regHeadContainer">
+        <img id="logo-reg" alt="nysl logo" src="https://s3.amazonaws.com/gbstool/emails/2027/nysl_logo.png?AWSAccessKeyId=AKIAJBIZLMJQ2O6DKIAA&Expires=1551171600&Signature=CaDgwQHWQ1fkhShKdeImzLsQJDo%3D">
+        <span id="formTitle">Register your player</span>
+      </div>
+      <fieldset class="player-info">
+        <div class="formLine">
+          <label>Player's First Name:</label>
+          <input type="text" name="first_name" class="input-control">
+          <label class="right-inline">Last Name:</label>
+          <input type="text" name="last_name" class="input-control">
+        </div>
+        <div class="formLine">
+          <label>Address:</label>
+          <input type="text" name="address" class="input-control">
+        </div>
+        <div class="formLine">
+          <label>City, State, Zip:</label>
+          <input type="text" name="city" class="input-control" id="city" placeholder="City">
+          <select name="state" class="input-control" id="state">
+            <option value="null">State</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+          </select>
+          <input type="text" name="zip" class="input-control" id="zip" placeholder="Zip">
+        </div>
+        <div class="formLine">
+          <label>Birthday:</label>
+          <input type="date" name="birthday" class="input-control">
+          <div class="radio-bundle">
+            <label class="right-inline">Gender:</label>
+            <div class="radio-option">
+              <input type="radio" name="gender" value="Female" class="input-control-radio">
+              <div class="option">Female</div>
+            </div>
+            <div class="radio-option">
+              <input type="radio" name="gender" value="Male" class="input-control-radio">
+              <div class="option">Male</div>
+            </div>
+          </div>
+        </div>
+        <div class="formLine">
+          <div class="radio-bundle">
+            <label>Grade:</label>
+            <div class="radio-option">
+              <input type="radio" name="grade" value="Pre-School" class="input-control-radio"><span id="option">Pre-School</span>
+            </div>
+            <div class="radio-option">
+              <input type="radio" name="grade" value="1st" class="input-control-radio">
+              <div class="option">1st</div>
+            </div>
+            <div class="radio-option">
+              <input type="radio" name="grade" value="2nd" class="input-control-radio">
+              <div class="option">2nd</div>
+            </div>
+            <div class="radio-option">
+              <input type="radio" name="grade" value="3rd" class="input-control-radio">
+              <div class="option">3rd</div>
+            </div>
+            <div class="radio-option">
+              <input type="radio" name="grade" value="4th" class="input-control-radio">
+              <div class="option">4th</div>
+            </div>
+            <div class="radio-option">
+              <input type="radio" name="grade" value="5th" class="input-control-radio">
+              <div class="option">5th</div>
+            </div>
+          </div>
+        </div>
+        <div class="formLine">
+          <label>Parent/Guardian:</label>
+          <input type="text" name="parent_guard" class="input-control">
+        </div>
+        <div class="formLine">
+          <label>Contact Phone:</label>
+          <input type="text" name="contact_phone" class="input-control">
+          <label class="right-inline">Contact Email:</label>
+          <input type="text" name="contact_email" class="input-control">
+        </div>
+        <br>
+        <p class="formLine form-font uppercase">Which elementary schools do you live near?</p>
+        <div class=inLine>
+          <table class="formTable">
+            <thead>
+              <tr>
+                <th>
+                  First Closest School
+                </th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="school_1" value="aj_katz"> AJ Katzenmaier</td>
+                <td><input type="radio" name="school_1" value="marj_hart"> Marjorie P Hart</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="school_1" value="greenbay"> Greenbay</td>
+                <td><input type="radio" name="school_1" value="north"> North Elementary</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="school_1" value="how_yeager"> Howard A Yeager</td>
+                <td><input type="radio" name="school_1" value="south"> South Elementary</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="formTable">
+            <thead>
+              <tr>
+                <th>
+                  Second Closest School
+                </th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="school_2" value="aj_katz"> AJ Katzenmaier</td>
+                <td><input type="radio" name="school_2" value="marj_hart"> Marjorie P Hart</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="school_2" value="greenbay"> Greenbay</td>
+                <td><input type="radio" name="school_2" value="north"> North Elementary</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="school_2" value="how_yeager"> Howard A Yeager</td>
+                <td><input type="radio" name="school_2" value="south"> South Elementary</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+        </div>
+        <br>
+        <p class="formLine form-font">
+          <span class="uppercase">What position(s) do you normally play? &nbsp;</span>
+          (check all that apply)
+        </p>
+        <table class="formTable">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="normal_position" value="forward"> Forward</td>
+              <td><input type="checkbox" name="normal_position" value="midfield"> Midfield</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="normal_position" value="defense"> Defense</td>
+              <td><input type="checkbox" name="normal_position" value="goalkeeper"> Goalkeeper</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p class="formLine form-font">
+          <span class="uppercase">What position(s) do you want to play? &nbsp;</span>
+          (check all that apply)
+        </p>
+        <table class="formTable">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="desired_position" value="forward"> Forward</td>
+              <td><input type="checkbox" name="desired_position" value="midfield"> Midfield</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="desired_position" value="defense"> Defense</td>
+              <td><input type="checkbox" name="desired_position" value="goalkeeper"> Goalkeeper</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <div class="formLine">
+          <label style="width:400px"> Do you already have a uniform?</label>
+          <div class="radio-option">
+            <input type=radio name="jersey_possession" value="yes" class="input-control-radio"><span class="option">Yes</span>
+          </div>
+          <div class="radio-option">
+            <input type=radio name="jersey_possession" value="no" class="input-control-radio"><span class="option">No</span>
+          </div>
+        </div>
+        <div class=inLine>
+          <table class="formTable">
+            <thead>
+              <tr>
+                <th>
+                  Jersey Size:
+                </th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="jersey_sz" value="ySmall"> Youth Small</td>
+                <td><input type="radio" name="jersey_sz" value="medium"> Medium</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="jersey_sz" value="yMedium"> Youth Medium</td>
+                <td><input type="radio" name="jersey_sz" value="large"> Large</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="jersey_sz" value="yLarge"> Youth Large</td>
+                <td><input type="radio" name="jersey_sz" value="xLarge"> Extra-Large</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="jersey_sz" value="small"> Small</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="formTable">
+            <thead>
+              <tr>
+                <th>
+                  Short Size:
+                </th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="radio" name="shorts_sz" value="ySmall"> Youth Small</td>
+                <td><input type="radio" name="shorts_sz" value="medium"> Medium</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="shorts_sz" value="yMedium"> Youth Medium</td>
+                <td><input type="radio" name="shorts_sz" value="large"> Large</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="shorts_sz" value="yLarge"> Youth Large</td>
+                <td><input type="radio" name="shorts_sz" value="xLarge"> Extra-Large</td>
+              </tr>
+              <tr>
+                <td><input type="radio" name="shorts_sz" value="small"> Small</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 class="pHeading formLine form-font">Permission to Play</h2>
+        <p class="form-font">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth
+          Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League”
+          accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their
+          employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or
+          on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL
+          sponsored activities, which transportation.</p>
+        <p class="form-font">By entering my name below, I hereby agree and authorize the above. In addition, by entering my name below, I also acknowledge that I have read the
+          cancellation policy and agree to its terms. </p>
+        <div class="formLine">
+          <label style="width:290px">Name of Parent/Guardian:</label>
+          <input type="text" name="permission_name" class="input-control" id="permission_name">
+          <label class="right-inline">Date:</label>
+          <input type="date" name="permission_date" class="input-control" id="permission_date">
+        </div>
+        <input class="btn" id="submit-btn" type="submit" name="submit" value="Submit">
+      </fieldset>
+    </div>
+  </form>
+</body>
+
+</html>

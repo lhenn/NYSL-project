@@ -1,0 +1,32 @@
+
+header {
+  font: 24px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  font: 18px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.top {
+  padding-bottom: 20px;
+}
+
+p {
+  font:18px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+  width: 100px;
+  float: left;
+  margin: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.indentWithImg {
+  margin-left: 160px;
+}
+
+.italicize {
+  font-style: italic;
+}

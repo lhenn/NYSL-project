@@ -1,0 +1,73 @@
+
+.headerContainer {
+  position: relative;
+  margin: 0 auto;
+  background-image: url('https://s3.amazonaws.com/gbstool/emails/2028/design1_image1.jpg?AWSAccessKeyId=AKIAJBIZLMJQ2O6DKIAA&Expires=1550653200&Signature=p%2FAqb2zRuUE8lVRbrl6USo2q%2Byc%3D');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  width: 100%;
+  height:700px;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font: 36px/60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+.pageTitleContainer {
+  display: block;
+  position: relative;
+  background-color: black;
+  text-align: center;
+  margin: 0;
+  bottom: 10px;
+  height: 75px;
+}
+h2 {
+  color: white;
+  font: 36px/75px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display:inline;
+}
+#logo {
+  position: relative;
+  width: 150px;
+  bottom: 120px;
+  float:right;
+  padding-right:50px;
+}
+nav {
+  float: left;
+  width: 20%;
+  margin: 0 1.5%;
+}
+section {
+  position:absolute;
+  width: 70%;
+  margin-left:25%;
+}
+p {
+  font:18px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.italicize {
+  font-style: italic;
+}
+.currentPage{
+  font-weight:bold;
+  text-decoration: underline;
+  color: #003366;
+}
+a:link {
+  color: #003366;
+  text-decoration: none;
+}
+a:visited {
+  color: #003366;
+  text-decoration: none;
+}
+.pHeading {
+  color: black;
+  font: 28px/60px Verdana, Geneva, sans-serif;
+}
